@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!-- Apoco si mi tio -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mármoles y Canteras Mexicanas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mármoles y Canteras Mexicanas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#cotizaciones">Cotizaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Materiales pétreos de la más alta calidad</h2>
+            <p>15 años de experiencia en venta y asesoría especializada</p>
+            <a href="#cotizaciones" class="btn-hero">Cotizar ahora</a>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="section">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <div class="grid">
+                <div class="historia">
+                    <p>Somos una empresa familiar con sede en CDMX, especializada en la distribución de mármoles, canteras y acabados pétreos para proyectos residenciales y comerciales.</p>
+                </div>
+                <div class="valores">
+                    <h3>Nuestros Valores</h3>
+                    <ul>
+                        <li>✅ Materiales 100% mexicanos</li>
+                        <li>✅ Precios competitivos</li>
+                        <li>✅ Asesoría técnica personalizada</li>
+                        <li>✅ Productos importados de calidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="section bg-light">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="filtros">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="canteras">Canteras</button>
+                <button class="filtro-btn" data-categoria="marmoles">Mármoles</button>
+                <button class="filtro-btn" data-categoria="acabados">Acabados</button>
+            </div>
+
+            <div class="galeria-productos">
+                <!-- Ejemplo de producto -->
+                <div class="producto" data-categoria="canteras">
+                    <img src="img/materiales/cantera-rosa.jpg" alt="Cantera Rosa">
+                    <h3>Cantera Rosa</h3>
+                    <p class="precio">$850/m²</p>
+                    <button class="btn-cotizar" data-producto="Cantera Rosa">Cotizar</button>
+                </div>
+                <!-- Más productos... -->
+            </div>
+          
+            <!-- ========== INICIO DE CARRUSELES ========== -->
+            <div class="carrusel-container">
+                <h3>Canteras Mexicanas</h3>
+                <div class="carrusel" id="carrusel-canteras">
+                    <div class="carrusel-item">
+                        <img src="img/materiales/cantera_rosa.jpg" alt="Cantera Rosa">
+                        <div class="carrusel-item-content">
+                            <h4>Cantera Rosa</h4>
+                            <p>$850/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/cantera_cafe.jpg" alt="Cantera Café">
+                        <div class="carrusel-item-content">
+                            <h4>Cantera Café</h4>
+                            <p>$900/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/cantera_negra.jpg" alt="Cantera Negra">
+                        <div class="carrusel-item-content">
+                            <h4>Cantera Negra</h4>
+                            <p>$950/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/recinto_uva.jpg" alt="Recinto Uva">
+                        <div class="carrusel-item-content">
+                            <h4>Recinto Uva</h4>
+                            <p>$1,100/m²</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" data-carrusel="canteras">❮</button>
+                <button class="carrusel-btn next" data-carrusel="canteras">❯</button>
+            </div>
+
+            <div class="carrusel-container">
+                <h3>Mármoles Nacionales</h3>
+                <div class="carrusel" id="carrusel-marmoles">
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_beige_maya.jpg" alt="Beige Maya">
+                        <div class="carrusel-item-content">
+                            <h4>Beige Maya</h4>
+                            <p>$1,200/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_crema_ibory.jpg" alt="Crema Ibory">
+                        <div class="carrusel-item-content">
+                            <h4>Crema Ibory</h4>
+                            <p>$1,350/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_travertino_florito.jpg" alt="Travertino Fiorito">
+                        <div class="carrusel-item-content">
+                            <h4>Travertino Fiorito</h4>
+                            <p>$1,400/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_santo_tomas.jpg" alt="Santo Tomás">
+                        <div class="carrusel-item-content">
+                            <h4>Santo Tomás</h4>
+                            <p>$1,500/m²</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" data-carrusel="marmoles">❮</button>
+                <button class="carrusel-btn next" data-carrusel="marmoles">❯</button>
+            </div>
+
+            <div class="carrusel-container">
+                <h3>Mármoles Importados</h3>
+                <div class="carrusel" id="carrusel-marmoles-importados">
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_venetian_white.jpg" alt="Venatian White">
+                        <div class="carrusel-item-content">
+                            <h4>Venatian White</h4>
+                            <p>$1,800/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_crema_arena.jpg" alt="Crema Arena">
+                        <div class="carrusel-item-content">
+                            <h4>Crema Arena</h4>
+                            <p>$1,750/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_bellagio.jpg" alt="Bellagio">
+                        <div class="carrusel-item-content">
+                            <h4>Bellagio</h4>
+                            <p>$2,000/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_verde_quetzal.jpg" alt="Verde Quetzal">
+                        <div class="carrusel-item-content">
+                            <h4>Verde Quetzal</h4>
+                            <p>$2,100/m²</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" data-carrusel="marmoles-importados">❮</button>
+                <button class="carrusel-btn next" data-carrusel="marmoles-importados">❯</button>
+            </div>
+
+            <div class="carrusel-container">
+                <h3>Lajas Naturales</h3>
+                <div class="carrusel" id="carrusel-lajas">
+                    <div class="carrusel-item">
+                        <img src="img/materiales/laja_tlayua_mexicana.jpg" alt="Laja Tlayua">
+                        <div class="carrusel-item-content">
+                            <h4>Laja Tlayua</h4>
+                            <p>$950/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/laja_multicolor_importada.jpg" alt="Laja Multicolor">
+                        <div class="carrusel-item-content">
+                            <h4>Laja Multicolor</h4>
+                            <p>$1,100/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/laja_plata_importada.jpg" alt="Laja Plata">
+                        <div class="carrusel-item-content">
+                            <h4>Laja Plata</h4>
+                            <p>$1,200/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/laja_negra.jpg" alt="Laja Negra">
+                        <div class="carrusel-item-content">
+                            <h4>Laja Negra</h4>
+                            <p>$1,050/m²</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" data-carrusel="lajas">❮</button>
+                <button class="carrusel-btn next" data-carrusel="lajas">❯</button>
+            </div>
+
+            <div class="carrusel-container">
+                <h3>Travertinos</h3>
+                <div class="carrusel" id="carrusel-travertinos">
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_travertino_veteado.jpg" alt="Travertino Veteado">
+                        <div class="carrusel-item-content">
+                            <h4>Travertino Veteado</h4>
+                            <p>$1,300/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_travertino_san_pablo.jpg" alt="Travertino San Pablo">
+                        <div class="carrusel-item-content">
+                            <h4>Travertino San Pablo</h4>
+                            <p>$1,400/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_travertino_rojo.jpg" alt="Travertino Rojo">
+                        <div class="carrusel-item-content">
+                            <h4>Travertino Rojo</h4>
+                            <p>$1,450/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_travertino_jalapa.jpg" alt="Travertino Jalapa">
+                        <div class="carrusel-item-content">
+                            <h4>Travertino Jalapa</h4>
+                            <p>$1,350/m²</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" data-carrusel="travertinos">❮</button>
+                <button class="carrusel-btn next" data-carrusel="travertinos">❯</button>
+            </div>
+
+            <div class="carrusel-container">
+                <h3>Piedras Decorativas</h3>
+                <div class="carrusel" id="carrusel-piedras-decorativas">
+                    <div class="carrusel-item">
+                        <img src="img/materiales/piedra-de-rio.jpg" alt="Piedra de Río">
+                        <div class="carrusel-item-content">
+                            <h4>Piedra de Río</h4>
+                            <p>$800/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/piedra_volcanica.jpg" alt="Piedra Volcánica">
+                        <div class="carrusel-item-content">
+                            <h4>Piedra Volcánica</h4>
+                            <p>$750/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/piedra_de_laja.jpg" alt="Piedra Laja">
+                        <div class="carrusel-item-content">
+                            <h4>Piedra Laja</h4>
+                            <p>$900/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/piedra_de_marmol.jpg" alt="Piedra Mármol">
+                        <div class="carrusel-item-content">
+                            <h4>Piedra Mármol</h4>
+                            <p>$1,100/m²</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" data-carrusel="piedras-decorativas">❮</button>
+                <button class="carrusel-btn next" data-carrusel="piedras-decorativas">❯</button>
+            </div>
+
+            <div class="carrusel-container">
+                <h3>Acabados Especiales</h3>
+                <div class="carrusel" id="carrusel-acabados">
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_acabado1.jpg" alt="Pulido Brillado">
+                        <div class="carrusel-item-content">
+                            <h4>Pulido Brillado</h4>
+                            <p>$300/m² adicional</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_acabado2.jpg" alt="Pulido Mate">
+                        <div class="carrusel-item-content">
+                            <h4>Pulido Mate</h4>
+                            <p>$250/m² adicional</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_acabado3.jpg" alt="Al Ácido">
+                        <div class="carrusel-item-content">
+                            <h4>Al Ácido</h4>
+                            <p>$350/m² adicional</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/marmoles_acabado4.jpg" alt="Cepillado">
+                        <div class="carrusel-item-content">
+                            <h4>Cepillado</h4>
+                            <p>$400/m² adicional</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" data-carrusel="acabados">❮</button>
+                <button class="carrusel-btn next" data-carrusel="acabados">❯</button>
+            </div>
+
+            <div class="carrusel-container">
+                <h3>Productos Especiales</h3>
+                <div class="carrusel" id="carrusel-especiales">
+                    <div class="carrusel-item">
+                        <img src="img/materiales/terrazos.jpg" alt="Terrazos">
+                        <div class="carrusel-item-content">
+                            <h4>Terrazos</h4>
+                            <p>$1,100/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/mosaicos.jpg" alt="Mosaicos">
+                        <div class="carrusel-item-content">
+                            <h4>Mosaicos</h4>
+                            <p>$950/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/maya_decorativa1.jpg" alt="Maya Decorativa">
+                        <div class="carrusel-item-content">
+                            <h4>Maya Decorativa</h4>
+                            <p>$1,050/m²</p>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/materiales/maya_decorativa2.jpgs" alt="Fuentes">
+                        <div class="carrusel-item-content">
+                            <h4>Fuentes</h4>
+                            <p>Desde $2,500</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" data-carrusel="especiales">❮</button>
+                <button class="carrusel-btn next" data-carrusel="especiales">❯</button>
+            </div>
+            <!-- ========== FIN DE CARRUSELES ========== -->
+        </div>
+    </section>
+
+    <!-- Sección Cotizaciones -->
+    <section id="cotizaciones" class="section">
+        <div class="container">
+            <h2>Solicita tu Cotización</h2>
+            <div class="grid-cotizacion">
+                <!-- Formulario -->
+                <div class="form-cotizacion">
+                    <form id="formCotizar">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo*</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono*</label>
+                            <input type="tel" id="telefono" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="material">Material de Interés*</label>
+                            <select id="material" required>
+                                <option value="">Seleccione...</option>
+                                
+                                <optgroup label="Canteras Mexicanas">
+                                    <option>Cantera Rosa</option>
+                                    <option>Cantera Café</option>
+                                    <option>Cantera Negra</option>
+                                    <option>Recinto Uva</option>
+                                    <option>Cantera Gris de los Remedios</option>
+                                    <option>Cantera Ticul</option>
+                                    <option>Cantera Naranja</option>
+                                    <option>Cantera Blanca Luxor</option>
+                                    <option>Café Maya</option>
+                                    <option>Rosa Huixquilucan</option>
+                                    <option>Cantera Bronce</option>
+                                    <option>Cantera Arcoíris</option>
+                                </optgroup>
+                                
+                                <optgroup label="Lajas">
+                                    <option>Laja Tlayua Mexicana</option>
+                                    <option>Laja Multicolor (IMPORTADA)</option>
+                                    <option>Laja Plata (IMPORTADA)</option>
+                                </optgroup>
+                                
+                                <optgroup label="Mármoles">
+                                    <option>Beige Maya</option>
+                                    <option>Crema Ibory</option>
+                                    <option>Travertino Fiorito</option>
+                                    <option>Santo Tomás</option>
+                                    <option>Jaspe Rosa</option>
+                                    <option>Travertino Jalapa</option>
+                                    <option>Blanco Vego</option>
+                                    <option>Venatian White</option>
+                                    <option>Crema Arena</option>
+                                    <option>Bellagio</option>
+                                    <option>Negro Monterrey</option>
+                                    <option>Verde Quetzal</option>
+                                    <option>Blanco Platino</option>
+                                    <option>Café Tabaco</option>
+                                    <option>Negro Oaxaca</option>
+                                </optgroup>
+                                
+                                <optgroup label="Travertinos">
+                                    <option>Travertino Veteado</option>
+                                    <option>Travertino San Pablo</option>
+                                    <option>Travertino Rojo</option>
+                                </optgroup>
+                                
+                                <optgroup label="Otros Productos">
+                                    <option>Terrazos</option>
+                                    <option>Mosaicos</option>
+                                    <option>Maya decorativa 30x30</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="acabado">Acabado (para mármoles)</label>
+                            <select id="acabado">
+                                <option value="">No aplica</option>
+                                <option>Pulido brillado</option>
+                                <option>Pulido mate</option>
+                                <option>Al ácido</option>
+                                <option>Cepillado</option>
+                                <option>Martelinado</option>
+                                <option>San blasteado</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="medidas">Medidas requeridas (m²)*</label>
+                            <input type="text" id="medidas" placeholder="Ej: 2.5 x 1.2" required>
+                        </div>
+
+                        <button type="submit" class="btn-whatsapp">
+                            <img src="img/icons/whatsapp_logo_icon.png" alt="WhatsApp" width="50"> Enviar Cotización
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contacto -->
+                <div class="contacto-box">
+                    <h3>Contacto Directo</h3>
+                    
+                    <div class="contacto-item">
+                        <img src="img/icons/whatsapp-logo.png" alt="WhatsApp" width="35">
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/525516770917">55 1677 0917</a> (Alberto)</p>
+                            <p><a href="https://wa.me/525539099244">55 3909 9244</a> (José)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <img src="img/icons/phone.png" alt="Teléfono" width="35">
+                        <div>
+                            <h4>Teléfonos Locales</h4>
+                            <p> 6363 6122 </p>
+                            <p> 6363 6123 </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <img src="img/icons/email.png" alt="Email" width="35">
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p><a href="mailto:rigalbet@gmail.com">rigalbet@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="horario">
+                        <h4>Horario de Atención</h4>
+                        <p>Lunes a Viernes: 9:00 - 18:00 hrs</p>
+                        <p>Sábados: 10:00 - 14:00 hrs</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vista previa del material -->
+            <div id="material-preview">
+                <img id="preview-img" src="img/materiales/default.jpg" alt="Vista previa del material">
+                <p id="preview-text">Seleccione un material para ver imagen de referencia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Mármoles y Canteras Mexicanas</p>
+            <p>Av. División del Norte 911, CDMX</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

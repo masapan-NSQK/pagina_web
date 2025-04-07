@@ -1,0 +1,457 @@
+/* Estilos Generales */
+:root {
+    --primary: #2a5f7f;
+    --secondary: #e63946;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: var(--dark);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 500px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: gray;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    background: url('../img/hero-bg.jpg') center/cover;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: #25D366; /* Color WhatsApp */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Secciones */
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+/* Galería de Productos */
+.galeria-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.producto {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    margin: 15px;
+    font-size: 1.2rem;
+}
+
+.precio {
+    margin: 0 15px 15px;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.btn-cotizar {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+    padding: 10px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Formulario de Cotización */
+.grid-cotizacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.form-cotizacion {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Contacto Box */
+.contacto-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.contacto-item img {
+    width: 24px;
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-cotizacion {
+        grid-template-columns: 1fr;
+    }
+    
+    .galeria-productos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para el formulario mejorado */
+.form-cotizacion {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Vista previa del material */
+#material-preview {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+#preview-img {
+    max-width: 100%;
+    max-height: 300px;
+    display: none;
+    margin: 0 auto 15px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+#preview-text {
+    color: #666;
+    font-style: italic;
+}
+
+/* Contacto mejorado */
+.contacto-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.contacto-item:last-child {
+    border-bottom: none;
+}
+
+.contacto-item h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.contacto-item p {
+    margin: 5px 0;
+}
+
+.horario {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-cotizacion {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+/* Ajustes para los carruseles */
+.carrusel-container {
+    margin: 30px auto;
+    position: relative;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.carrusel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+    padding: 15px 0;
+    scrollbar-width: none;
+}
+
+.carrusel-item {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    height: 350px; /* Altura fija para todos los items */
+    display: flex;
+    flex-direction: column;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover;
+}
+
+.carrusel-item-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carrusel-item h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: var(--dark);
+}
+
+.carrusel-item p {
+    margin: 0;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+/* Botones de navegación mejorados */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(42, 95, 127, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+
+.carrusel-btn:hover {
+    background: rgba(42, 95, 127, 1);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carrusel-btn.prev {
+    left: 0;
+}
+
+.carrusel-btn.next {
+    right: 0;
+}
+
+/* Títulos de sección mejorados */
+.carrusel-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.carrusel-container h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carrusel-item {
+        flex: 0 0 220px;
+        height: 320px;
+    }
+    
+    .carrusel-item img {
+        height: 160px;
+    }
+    
+    .carrusel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrusel-container {
+        padding: 0 10px;
+    }
+    
+    .carrusel-item {
+        flex: 0 0 180px;
+        height: 280px;
+    }
+    
+    .carrusel-item img {
+        height: 140px;
+    }
+    
+    .carrusel-container h3 {
+        font-size: 1.3rem;
+    }
+}
